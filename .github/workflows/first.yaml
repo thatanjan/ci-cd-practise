@@ -1,13 +1,11 @@
 name: First Action
-
-on: push
-
+'on': push
 jobs:
  first-action:
   name: doing first action
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v2
-   - uses: actions/actions/setup-node@v2
+   - uses: actions/setup-node@v2
    - run: npm ci
    - run: npm build
